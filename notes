@@ -1,0 +1,27 @@
+Command
+Purpose
+Example
+Save value
+Store a single key/value pair
+await AsyncStorage.setItem("@key", "value")
+Read value
+Get a value (string or JSON)
+const v = await AsyncStorage.getItem("@key")
+Remove value
+Delete one key/value pair
+await AsyncStorage.removeItem("@key")
+Clear all
+Wipe everything (⚠️ careful)
+await AsyncStorage.clear()
+Save multiple
+Store several at once
+await AsyncStorage.multiSet([["@a","1"],["@b","2"]])
+Read multiple
+Get several values at once
+const arr = await AsyncStorage.multiGet(["@a","@b"])
+Remove multiple
+Delete several keys at once
+await AsyncStorage.multiRemove(["@a","@b"])
+List all keys
+Debug: see what’s stored
+const keys = await AsyncStorage.getAllKeys()
